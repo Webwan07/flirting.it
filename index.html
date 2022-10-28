@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--Website owner: Josuan or Devwan-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POV: You're dating an IT/CS student</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <script type="text/Javascript">
+      alert("The device you are using is being hacked by me!")
+      alert("The truth is, I'm inside your heart")
+      alert("Don't panic it's Romantic")
+      alert("Hi  Ganda!")
+      alert("Can you trust me?")
+     </script>
+    
+  </head>
+  <body>
+    <section>
+      <button class="show-modal" onclick="audio.play();"><i class="fa-regular fa-heart"></i></button>
+      <span class="overlay"></span>
+
+      <div class="modal-box">
+        <i class="fa-solid fa-face-smile"></i>
+        <h2>Can you</h2>
+        <h3>tell me if you love me now?</h3>
+
+        <div class="buttons">
+          <button class="close-btn">Yes</button>
+          <button>Yes</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const section = document.querySelector("section"),
+        overlay = document.querySelector(".overlay"),
+        showBtn = document.querySelector(".show-modal"),
+        closeBtn = document.querySelector(".close-btn");
+
+      showBtn.addEventListener("click", () => section.classList.add("active"));
+
+      overlay.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+      closeBtn.addEventListener("click", () =>
+        section.classList.remove("active")
+      );
+    </script>
+    <script>
+      const audio = new Audio();
+    audio.src = "NA-AKIT lyrics - Henyong Makata _ Napakaganda mo lakas makaakit.mp3";
+    </script>
+  </body>
+</html>
